@@ -1,0 +1,46 @@
+#event {
+	width: 500px;
+	height: 324px;
+	background-color: white;
+	border-radius: 24px;
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 5px solid transparent;
+	box-sizing: content-box;
+	transition: box-shadow 0.2s ease;
+}
+
+.event__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -330px;
+	height: 324px;
+	font-family: 'Formula1';
+	color: #ffffff;
+}
+
+.event__text-type {
+	font-size: 56px;
+	line-height: 80px;
+	margin: 0px;
+}
+
+.event__text-country {
+	font-size: 22px;
+	line-height: 28px;
+	margin: 0px;
+}
+
+.event__text-datum {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0px;
+}
+
+#event:hover {
+	box-shadow: 0 0 0 5px #e10600;
+	cursor: pointer;
+}

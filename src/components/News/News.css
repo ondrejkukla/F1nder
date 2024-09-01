@@ -1,0 +1,45 @@
+.news__container {
+	width: 1280px;
+	height: fit-content;
+}
+
+.news__content {
+	display: grid;
+	width: 100%;
+	grid-template: repeat(2, 380px) / repeat(3, 400px);
+	gap: 40px;
+	margin-bottom: 48px;
+}
+
+.news__button {
+	display: flex;
+	align-items: center;
+	padding: 8px 16px;
+	margin-bottom: 40px;
+	border-radius: 48px;
+	gap: 8px;
+	margin-left: auto; /* Pushes the button to the right */
+	transition: color 0.2s ease;
+}
+
+.news__button p {
+	font-family: 'Formula1';
+	font-size: 24px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.news__button img {
+	padding: 0px;
+	margin: 0px;
+	width: 32px;
+	transition: opacity 0.3s ease;
+}
+
+.news__button:hover .news__button img {
+	opacity: 0;
+}
+
+.news__button:hover {
+	color: #e10600;
+}

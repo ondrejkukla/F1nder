@@ -1,0 +1,28 @@
+#header {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.header__container {
+	width: 1280px;
+	height: fit-content;
+	margin: 0px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+}
+
+.header__logo {
+	width: 240px;
+}
+
+.header__tabs {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}

@@ -1,0 +1,49 @@
+#results {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+}
+
+.results__container {
+	display: flex;
+	flex-direction: column;
+	width: 1280px;
+}
+
+.results__content {
+	display: flex;
+	flex-direction: row;
+	gap: 80px;
+}
+
+.content__drivers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+}
+
+.content__driversTable {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 62px 98px 350px 82px;
+	grid-template-rows: repeat(10, auto);
+	width: 100%;
+	font-family: 'Formula1';
+	font-size: 24px;
+	line-height: 32px;
+	color: #000000;
+}
+
+.content__teams {
+	width: 600px;
+}
+
+.table_header {
+	width: 100%;
+	font-family: 'Formula1';
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}

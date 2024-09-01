@@ -1,0 +1,29 @@
+#calendar {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	background-color: (255, 255, 255, 0.15);
+	background-image: url('../../assets/images/ferrari_bg.png');
+	background-size: cover;
+	background-position: center;
+	border-radius: 0px 0px 48px 48px;
+}
+
+.calendar__container {
+	display: flex;
+	flex-direction: column;
+	width: 1280px;
+	height: 720px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.calendar__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 48px;
+}
