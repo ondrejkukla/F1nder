@@ -20,3 +20,53 @@
 .footer__logo {
 	height: 80px;
 }
+
+@media only screen and (max-width: 1440px) {
+	.footer__container {
+		width: 1040px;
+	}
+
+	.footer__logo {
+		height: 70px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.footer__container {
+		width: 832px;
+	}
+
+	.footer__logo {
+		height: 60px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.footer__container {
+		width: 688px;
+	}
+
+	.footer__logo {
+		height: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.footer__container {
+		width: 496px;
+	}
+
+	.footer__logo {
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.footer__container {
+		width: 446px;
+	}
+
+	.footer__logo {
+		height: 30px;
+	}
+}

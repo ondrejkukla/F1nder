@@ -24,11 +24,21 @@ h4 {
 	margin-top: 0px;
 }
 
+@media only screen and (max-width: 1440px) {
+	h4 {
+		width: 75%;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	h2 {
 		width: 810px;
 		font-size: 72px;
 		line-height: 80px;
+	}
+
+	h4 {
+		width: 100%;
 	}
 }
 

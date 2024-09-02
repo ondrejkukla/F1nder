@@ -29,9 +29,8 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 	useEffect(() => {
 		const fetchRaceData = async () => {
 			try {
-				const response = await fetch(
-					'https://ergast.com/api/f1/current.json'
-				);
+				const response = await fetch('https://ergast.com/api/f1/current.json');
+
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
@@ -91,20 +90,20 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 
 	return (
 		<a
-			href={`https://www.formula1.com/en/racing/2024/${race.Circuit.Location.country.toLowerCase()}`}
-			id="event"
-		>
-			<img className="event__img" src={img} alt="" />
-			<div className="event__text">
-				<p className="event__text-type">
-					{raceType === 'last' ? 'Last Race' : 'Next Race'}
-				</p>
-				<p className="event__text-country">
-					{race.Circuit.Location.country}
-				</p>
-				<p className="event__text-datum">{race.date}</p>
-			</div>
-		</a>
+      href={`https://www.formula1.com/en/racing/2024/${race.Circuit.Location.country.toLowerCase()}`}
+      className='event'
+    >
+      <img className="event__img" src={img} alt="Event" />
+      <div className="event__text">
+        <p className="event__text-type">
+          {raceType === 'last' ? 'Last Race' : 'Next Race'}
+        </p>
+        <p className="event__text-country">
+          {race.Circuit.Location.country}
+        </p>
+        <p className="event__text-datum">{race.date}</p>
+      </div>
+    </a>
 	);
 };
 

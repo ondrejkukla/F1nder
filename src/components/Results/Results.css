@@ -3,62 +3,62 @@
 	height: fit-content;
 	display: flex;
 	justify-content: center;
-}
-
-.results__container {
+  }
+  
+  .results__container {
 	display: flex;
 	flex-direction: column;
 	width: 1280px;
-}
-
-.results__content {
+  }
+  
+  .results__content {
 	display: flex;
-	flex-direction: row;
 	gap: 80px;
 	padding-bottom: 64px;
-}
-
-.content__drivers {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  }
+  
+  .results__section {
 	width: 600px;
+  }
+  
+  .results__loading,
+  .results__error {
+	color: black;
+  }
+
+@media only screen and (max-width: 1440px) {
+	.results__container {
+		width: 1040px;
+	}
 }
 
-.content__driversTable {
-	display: flex;
-	flex-direction: column;
-	grid-template-columns: 62px 98px 350px 82px;
-	grid-template-rows: repeat(10, auto);
-	width: 100%;
-	font-family: 'Formula1';
-	font-size: 24px;
-	line-height: 32px;
-	color: #000000;
-	gap: 0px;
+@media only screen and (max-width: 1200px) {
+	.results__container {
+		width: 832px;
+	}
+	.results__content {
+		gap: 40px;
+	}
 }
 
-.content__teams {
-	width: 600px;
+@media only screen and (max-width: 992px) {
+	.results__container {
+		width: 688px;
+	}
 }
 
-thead {
-	border-radius: 16px 16px 0px 0px;
-	background-color: #000000;
-	color: #ffffff;
-	text-align: left;
-	padding-left: 8px;
-	font-family: 'Formula1';
-	font-size: 24px;
-	line-height: 32px;
+@media only screen and (max-width: 768px) {
+	.results__container {
+		width: 496px;
+	}
+
+	.results__content {
+		flex-direction: column;
+	}
 }
 
-td {
-	padding: 0px;
-	margin: 0px;
-	height: fit-content;
-}
-
-tbody > tr:nth-of-type(even) {
-	background-color: #d9d9d9;
+@media only screen and (max-width: 576px) {
+	.results__container {
+		width: 446px;
+	}
 }
