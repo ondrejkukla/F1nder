@@ -2,7 +2,11 @@ import React from 'react';
 import './BusinessCard.css';
 import assets from '../../assets/index';
 
-const BusinessCard: React.FC = () => {
+interface BusinessCardProps {
+	color: 'white' | 'black';
+}
+
+const BusinessCard: React.FC<BusinessCardProps> = ({ color }) => {
 	return (
 		<div id="businessCard">
 			<img
@@ -10,7 +14,7 @@ const BusinessCard: React.FC = () => {
 				src={assets.images.author}
 				alt="author"
 			/>
-			<div className="businessCard__text">
+			<div className="businessCard__text" style={{ color }}>
 				<p style={{ fontFamily: 'Lato-bold' }}>Ondrej Kukla</p>
 				<p>
 					<span className="businessCard__text-status">● </span>

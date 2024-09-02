@@ -3,6 +3,7 @@ import './News.css';
 import Heading from '../Heading/Heading';
 import Story from '../Story/Story';
 import assets from '../../assets/index.ts';
+import Button from '../Button/Button.tsx';
 
 const News: React.FC = () => {
 	return (
@@ -43,6 +44,7 @@ const News: React.FC = () => {
 					<p>More</p>
 					<img src={assets.images.arrowWhite} alt="arrow" />
 				</button>
+				<Button />
 			</div>
 		</div>
 	);

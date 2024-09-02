@@ -13,13 +13,17 @@ import story3img from './images/story3.png';
 import story4img from './images/story4.png';
 import story5img from './images/story5.png';
 import story6img from './images/story6.png';
-import arrowBlack from './images/arrow_black.png';
+import arrowRed from './images/arrow_red.png';
 import arrowWhite from './images/arrow_white.png';
 import calendarLast from './images/calendar_last.png';
 import calendarNext from './images/calendar_next.png';
 import rbrLogo from './images/rbr_logo.png';
+import mercedesLogo from './images/mercedes_logo.png';
+import ferrariLogo from './images/ferrari_logo.png';
+import astonLogo from './images/aston_logo.png';
+import mclarenLogo from './images/mclaren_logo.png';
 
-const title: string = 'Fuel Your Passion & Track Every Lap';
+const title: string = 'Fuel Your Passion & \n Track Every Lap';
 
 const story1: string =
 	'Horner concedes McLaren ‘in a different league’ in Zandvoort and insists Red Bull ‘have to respond’';
@@ -55,11 +59,15 @@ const images = {
 	story4img,
 	story5img,
 	story6img,
-	arrowBlack,
+	arrowRed,
 	arrowWhite,
 	calendarLast,
 	calendarNext,
 	rbrLogo,
+	mercedesLogo,
+	ferrariLogo,
+	astonLogo,
+	mclarenLogo,
 };
 
 const text = {

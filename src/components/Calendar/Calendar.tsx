@@ -10,8 +10,8 @@ const Calendar: React.FC = () => {
 			<div className="calendar__container">
 				<Heading level={2} text="Schedule" />
 				<div className="calendar__content">
-					<Event img={assets.images.calendarLast} />
-					<Event img={assets.images.calendarNext} />
+					<Event img={assets.images.calendarLast} raceType='last' />
+					<Event img={assets.images.calendarNext} raceType='next' />
 				</div>
 				{/* TO DO Button component */}
 				<button className="news__button">

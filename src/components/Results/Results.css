@@ -15,6 +15,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 80px;
+	padding-bottom: 64px;
 }
 
 .content__drivers {
@@ -25,8 +26,8 @@
 }
 
 .content__driversTable {
-	display: grid;
-	align-items: center;
+	display: flex;
+	flex-direction: column;
 	grid-template-columns: 62px 98px 350px 82px;
 	grid-template-rows: repeat(10, auto);
 	width: 100%;
@@ -34,16 +35,30 @@
 	font-size: 24px;
 	line-height: 32px;
 	color: #000000;
+	gap: 0px;
 }
 
 .content__teams {
 	width: 600px;
 }
 
-.table_header {
-	width: 100%;
+thead {
+	border-radius: 16px 16px 0px 0px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 8px;
 	font-family: 'Formula1';
-	font-size: 18px;
-	line-height: 24px;
-	color: #000000;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+td {
+	padding: 0px;
+	margin: 0px;
+	height: fit-content;
+}
+
+tbody > tr:nth-of-type(even) {
+	background-color: #d9d9d9;
 }

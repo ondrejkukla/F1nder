@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 			<div className="hero__opacity">
 				<div className="businessCard__container">
 					<div className="businessCard__container2">
-						<BusinessCard></BusinessCard>
+						<BusinessCard color='black' />
 					</div>
 				</div>
 				<div className="hero__container">

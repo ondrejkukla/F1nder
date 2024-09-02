@@ -13,7 +13,6 @@ const Header: React.FC = () => {
 					alt="logo"
 				/>
 				<div className="header__tabs">
-					<Tab text="About" />
 					<Tab text="News" />
 					<Tab text="Schedule" />
 					<Tab text="Drivers" />

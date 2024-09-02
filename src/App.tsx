@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero.tsx';
 import News from './components/News/News.tsx';
 import Calendar from './components/Calendar/Calendar.tsx';
 import Results from './components/Results/Results.tsx';
+import Footer from './components/Footer/Footer.tsx';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<News />
 			<Calendar />
 			<Results />
+			<Footer />
 		</>
 	);
 }
