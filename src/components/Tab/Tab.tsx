@@ -1,8 +1,17 @@
 import React from 'react';
 import './Tab.css';
 
-const Tab: React.FC<{ text: string }> = ({ text }) => {
-	return <a className="header__tab">{text}</a>;
+interface TabProps {
+	text: string;
+	link: string;
+}
+
+const Tab: React.FC<TabProps> = ({ text, link }) => {
+	return (
+		<a href={link} className="header__tab">
+			{text}
+		</a>
+	);
 };
 
 export default Tab;

@@ -26,4 +26,39 @@
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 56px;
+	height: fit-content;
+}
+
+@media only screen and (max-width: 1440px) {
+	.calendar__container {
+		width: 1040px;
+	}
+
+	.calendar__content {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.calendar__container {
+		width: 832px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.calendar__container {
+		width: 688px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.calendar__container {
+		width: 496px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.calendar__container {
+		width: 446px;
+	}
 }

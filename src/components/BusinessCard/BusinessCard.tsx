@@ -4,11 +4,12 @@ import assets from '../../assets/index';
 
 interface BusinessCardProps {
 	color: 'white' | 'black';
+	email: string;
 }
 
-const BusinessCard: React.FC<BusinessCardProps> = ({ color }) => {
+const BusinessCard: React.FC<BusinessCardProps> = ({ color, email }) => {
 	return (
-		<div id="businessCard">
+		<a id="businessCard" href={`mailto:${email}`}>
 			<img
 				className="businessCard__img"
 				src={assets.images.author}
@@ -21,7 +22,7 @@ const BusinessCard: React.FC<BusinessCardProps> = ({ color }) => {
 					Available to work
 				</p>
 			</div>
-		</div>
+		</a>
 	);
 };
 

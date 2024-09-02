@@ -1,6 +1,6 @@
 #feature {
 	width: 400px;
-	height: 318px;
+	height: fit-content;
 	background-color: white;
 	border-radius: 24px;
 	display: flex;
@@ -37,4 +37,64 @@
 
 #feature:hover {
 	box-shadow: 0 0 0 5px #e10600;
+}
+
+@media only screen and (max-width: 1440px) {
+	#feature {
+		width: 330px;
+		height: fit-content;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#feature {
+		width: 260px;
+		height: fit-content;
+	}
+
+	.feature__headingIcon {
+		height: 48px;
+		width: 48px;
+	}
+
+	.feature__headerText {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	#feature {
+		width: 200px;
+		height: fit-content;
+	}
+
+	.feature__header {
+		gap: 8px;
+	}
+
+	.feature__headingIcon {
+		height: 38px;
+		width: 38px;
+	}
+
+	.feature__headerText {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#feature {
+		width: 310px;
+		height: fit-content;
+		justify-content: space-between;
+	}
+
+	.feature__headingIcon {
+		height: 56px;
+		width: 56px;
+	}
+
+	.feature__headerText {
+		font-size: 38px;
+	}
 }

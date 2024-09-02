@@ -1,12 +1,26 @@
 .header__tab {
-    font-size: 24px;
-    font-family: 'Formula1';
+	font-size: 24px;
+	font-family: 'Formula1';
 	color: #000000;
-	transition: color 0.2s ease, transform 0.2s ease;
+	transition:
+		color 0.2s ease,
+		transform 0.2s ease;
 }
 
 .header__tab:hover {
 	color: #e10600;
 	cursor: pointer;
 	transform: scale(1.03);
+}
+
+@media only screen and (max-width: 768px) {
+	.header__tab {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.header__tab {
+		font-size: 18px;
+	}
 }

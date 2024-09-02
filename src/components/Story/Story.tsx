@@ -4,14 +4,15 @@ import './Story.css';
 interface StoryProps {
 	img: string;
 	text: string;
+	href: string;
 }
 
-const Story: React.FC<StoryProps> = ({ img, text }) => {
+const Story: React.FC<StoryProps> = ({ img, text, href }) => {
 	return (
-		<button className="story__container">
-			<img className="story__img" src={img} alt="story picture"></img>
+		<a href={href} className="story__container">
+			<img className="story__img" src={img} alt="story picture" />
 			<p className="story__text">{text}</p>
-		</button>
+		</a>
 	);
 };
 

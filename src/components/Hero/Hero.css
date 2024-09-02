@@ -42,3 +42,68 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+@media only screen and (max-width: 1440px) {
+	.businessCard__container2 {
+		width: 1040px;
+	}
+
+	.hero__container {
+		width: 1040px;
+		height: 680px;
+	}
+
+	.hero__features {
+		height: fit-content;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.businessCard__container2 {
+		width: 832px;
+	}
+
+	.hero__container {
+		width: 832px;
+		height: 580px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.businessCard__container2 {
+		width: 688px;
+	}
+
+	.hero__container {
+		width: 688px;
+		height: 500px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.businessCard__container2 {
+		width: 496px;
+	}
+
+	.hero__container {
+		width: 496px;
+		height: 1250px;
+	}
+
+	.hero__features {
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		margin-bottom: 56px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.businessCard__container2 {
+		width: 446px;
+	}
+
+	.hero__container {
+		width: 446px;
+	}
+}

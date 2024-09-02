@@ -14,6 +14,7 @@
 	padding-bottom: 16px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	background-color: #ffffff;
 }
 
@@ -25,4 +26,58 @@
 	display: flex;
 	gap: 24px;
 	align-items: center;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 1440px) {
+	.header__container {
+		width: 1040px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.header__container {
+		width: 832px;
+	}
+
+	.header__logo {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.header__container {
+		width: 688px;
+	}
+
+	.header__logo {
+		width: 160px;
+	}
+
+	.header__tabs {
+		gap: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.header__container {
+		width: 496px;
+	}
+
+	.header__logo {
+		width: 100px;
+	}
+
+	.header__tabs {
+		gap: 8px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.header__container {
+		width: 446px;
+	}
 }

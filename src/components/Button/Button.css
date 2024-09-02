@@ -1,12 +1,17 @@
+/* Button.css */
 .button {
 	display: flex;
 	align-items: center;
+	width: fit-content;
 	padding: 8px 16px;
 	margin-bottom: 56px;
 	border-radius: 48px;
 	gap: 8px;
 	margin-left: auto;
 	transition: color 0.2s ease;
+	text-decoration: none;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .button p {
@@ -16,26 +21,41 @@
 	margin: 0px;
 }
 
-.button img {
+.button .button__arrow {
 	padding: 0px;
 	margin: 0px;
-	width: 32px;
-	transition: opacity 0.2s ease, transform 0.3s ease, display 0.2 ease
-}
-
-.arrow--red {
-    display: none;
+	width: 40px;
+	height: 40px;
+	transition: stroke 0.2s ease;
+	stroke: #ffffff;
 }
 
 .button:hover {
 	color: #e10600;
 }
 
-.button:hover .arrow--red {
-    display: block;
+.button:hover .button__arrow {
+	stroke: #e10600;
 }
 
-.button:hover .arrow--white {
-    opacity: 0;
-    display: none;
+@media only screen and (max-width: 768px) {
+	.button p {
+		font-size: 20px;
+	}
+
+	.button .button__arrow {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.button p {
+		font-size: 18px;
+	}
+
+	.button .button__arrow {
+		width: 28px;
+		height: 28px;
+	}
 }

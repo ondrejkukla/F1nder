@@ -1,3 +1,4 @@
+import favicon from './images/favicon.png';
 import logoBlack from './images/logo_black.png';
 import logoWhite from './images/logo_white.png';
 import author from './images/ok.jpg';
@@ -13,8 +14,8 @@ import story3img from './images/story3.png';
 import story4img from './images/story4.png';
 import story5img from './images/story5.png';
 import story6img from './images/story6.png';
-import arrowRed from './images/arrow_red.png';
-import arrowWhite from './images/arrow_white.png';
+import arrowRed from './images/arrow_red.svg';
+import arrowWhite from './images/arrow_white.svg';
 import calendarLast from './images/calendar_last.png';
 import calendarNext from './images/calendar_next.png';
 import rbrLogo from './images/rbr_logo.png';
@@ -43,7 +44,26 @@ const story5: string =
 const story6: string =
 	'‘What a race!’ – Gasly hails ‘amazing’ Dutch Grand Prix as he bags precious points for Alpine';
 
+const href1: string =
+	'https://www.formula1.com/en/latest/article/horner-concedes-mclaren-in-a-different-league-in-zandvoort-and-insists-red.4tRC1aB6BDi2D6Ytt39JI8';
+
+const href2: string =
+	'https://www.formula1.com/en/latest/article/i-love-to-go-up-against-top-drivers-albon-relishing-challenge-of-sainz.5GEmQmLIrg9dTsYIwTdoga';
+
+const href3: string =
+	'https://www.formula1.com/en/latest/article/breaking-f2-racer-colapinto-replaces-sargeant-at-williams-for-rest-of-2024.2CghqWgB0vxJoZK8wWoMPj';
+
+const href4: string =
+	'https://www.formula1.com/en/latest/article/antonelli-to-make-f1-weekend-debut-at-monza-as-mercedes-confirm-fp1-outing.4hPO8isg3DfimnXDiycK8m';
+
+const href5: string =
+	'https://www.formula1.com/en/latest/article/were-not-quick-enough-verstappen-eager-for-red-bull-gains-after-losing-out.5QQWqXkykuYD3i9r6E31Dg';
+
+const href6: string =
+	'https://www.formula1.com/en/latest/article/what-a-race-gasly-hails-amazing-dutch-grand-prix-as-he-bags-precious-points.6XfOmH3tDLwgzLJ2ZuceDL';
+
 const images = {
+	favicon,
 	logoBlack,
 	logoWhite,
 	author,
@@ -78,6 +98,12 @@ const text = {
 	story4,
 	story5,
 	story6,
+	href1,
+	href2,
+	href3,
+	href4,
+	href5,
+	href6,
 };
 
 export default { images, text };

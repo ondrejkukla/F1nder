@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 					src={assets.images.logoWhite}
 					alt="logo"
 				/>
-                <BusinessCard color='white' />
+				<BusinessCard color="white" email="vondrej.kukla@gmail.com" />
 			</div>
 		</div>
 	);
