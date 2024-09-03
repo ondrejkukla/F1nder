@@ -3,28 +3,28 @@
 	height: fit-content;
 	display: flex;
 	justify-content: center;
-  }
-  
-  .results__container {
+}
+
+.results__container {
 	display: flex;
 	flex-direction: column;
 	width: 1280px;
-  }
-  
-  .results__content {
+}
+
+.results__content {
 	display: flex;
 	gap: 80px;
 	padding-bottom: 64px;
-  }
-  
-  .results__section {
+}
+
+.results__section {
 	width: 600px;
-  }
-  
-  .results__loading,
-  .results__error {
+}
+
+.results__loading,
+.results__error {
 	color: black;
-  }
+}
 
 @media only screen and (max-width: 1440px) {
 	.results__container {

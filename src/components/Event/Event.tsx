@@ -29,7 +29,9 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 	useEffect(() => {
 		const fetchRaceData = async () => {
 			try {
-				const response = await fetch('https://ergast.com/api/f1/current.json');
+				const response = await fetch(
+					'https://ergast.com/api/f1/current.json'
+				);
 
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
@@ -47,7 +49,7 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 						if (
 							!lastRace ||
 							raceDate >
-							new Date(`${lastRace.date}T${lastRace.time}`)
+								new Date(`${lastRace.date}T${lastRace.time}`)
 						) {
 							lastRace = race;
 						}
@@ -62,14 +64,15 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 				setLastRace(lastRace);
 				setNextRace(nextRace);
 
-				// Ensure `onCountryChange` is called correctly
 				if (onCountryChange) {
 					if (raceType === 'last' && lastRace) {
 						onCountryChange(
+							//@ts-expect-error does not exist on type never
 							lastRace.Circuit.Location.country.toLowerCase()
 						);
 					} else if (raceType === 'next' && nextRace) {
 						onCountryChange(
+							//@ts-expect-error does not exist on type never
 							nextRace.Circuit.Location.country.toLowerCase()
 						);
 					}
@@ -90,20 +93,20 @@ const Event: React.FC<EventProps> = ({ raceType, img, onCountryChange }) => {
 
 	return (
 		<a
-      href={`https://www.formula1.com/en/racing/2024/${race.Circuit.Location.country.toLowerCase()}`}
-      className='event'
-    >
-      <img className="event__img" src={img} alt="Event" />
-      <div className="event__text">
-        <p className="event__text-type">
-          {raceType === 'last' ? 'Last Race' : 'Next Race'}
-        </p>
-        <p className="event__text-country">
-          {race.Circuit.Location.country}
-        </p>
-        <p className="event__text-datum">{race.date}</p>
-      </div>
-    </a>
+			href={`https://www.formula1.com/en/racing/2024/${race.Circuit.Location.country.toLowerCase()}`}
+			className="event"
+		>
+			<img className="event__img" src={img} alt="Event" />
+			<div className="event__text">
+				<p className="event__text-type">
+					{raceType === 'last' ? 'Last Race' : 'Next Race'}
+				</p>
+				<p className="event__text-country">
+					{race.Circuit.Location.country}
+				</p>
+				<p className="event__text-datum">{race.date}</p>
+			</div>
+		</a>
 	);
 };
 
