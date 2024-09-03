@@ -8,7 +8,9 @@
 		"build": "tsc -b && vite build",
 		"format": "prettier --write .",
 		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"cors-anywhere": "^0.4.4",
