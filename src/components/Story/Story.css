@@ -43,4 +43,8 @@
 		width: 95%;
 		font-size: 18px;
 	}
+
+	.story__container {
+		height: 100%;
+	}
 }

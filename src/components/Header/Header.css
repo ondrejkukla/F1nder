@@ -81,16 +81,18 @@ html {
 	}
 }
 
-@media only screen and (max-width: 492px) {
+@media only screen and (max-width: 480px) {
 	.header__container {
-		width: 400px;
+		width: 337px;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	.header__logo {
-		width: 76px;
+		width: 160px;
 	}
 
 	.header__tabs {
-		gap: 8px;
+		gap: 16px;
 	}
 }
