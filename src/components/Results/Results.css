@@ -36,6 +36,7 @@
 	.results__container {
 		width: 832px;
 	}
+
 	.results__content {
 		gap: 40px;
 	}
@@ -60,5 +61,11 @@
 @media only screen and (max-width: 576px) {
 	.results__container {
 		width: 446px;
+	}
+}
+
+@media only screen and (max-width: 492px) {
+	.results__container {
+		width: 400px;
 	}
 }

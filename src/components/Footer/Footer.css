@@ -70,3 +70,9 @@
 		height: 30px;
 	}
 }
+
+@media only screen and (max-width: 492px) {
+	.footer__container {
+		width: 400px;
+	}
+}

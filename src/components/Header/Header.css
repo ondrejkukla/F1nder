@@ -25,7 +25,6 @@
 .header__tabs {
 	display: flex;
 	gap: 24px;
-	align-items: center;
 }
 
 html {
@@ -79,5 +78,19 @@ html {
 @media only screen and (max-width: 576px) {
 	.header__container {
 		width: 446px;
+	}
+}
+
+@media only screen and (max-width: 492px) {
+	.header__container {
+		width: 400px;
+	}
+
+	.header__logo {
+		width: 76px;
+	}
+
+	.header__tabs {
+		gap: 8px;
 	}
 }

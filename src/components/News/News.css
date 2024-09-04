@@ -77,3 +77,9 @@
 		justify-content: center;
 	}
 }
+
+@media only screen and (max-width: 492px) {
+	.news__container {
+		width: 400px;
+	}
+}

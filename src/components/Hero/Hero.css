@@ -107,3 +107,13 @@
 		width: 446px;
 	}
 }
+
+@media only screen and (max-width: 492px) {
+	.businessCard__container2 {
+		width: 400px;
+	}
+
+	.hero__container {
+		width: 400px;
+	}
+}
