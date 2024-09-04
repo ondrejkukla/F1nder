@@ -68,4 +68,9 @@
 	.results__container {
 		width: 337px;
 	}
+
+	.results__content {
+		width: 337px;
+		margin: auto;
+	}
 }
