@@ -18,8 +18,18 @@ const Results: React.FC = () => {
 	const { driverStandings, constructorStandings, loading, error } =
 		useStandings();
 
-	if (loading) return <p style={{ color: 'black' }}>Loading...</p>;
-	if (error) return <p style={{ color: 'black' }}>Error loading data.</p>;
+	if (loading)
+		return (
+			<p style={{ color: 'black', fontFamily: 'Lato', fontSize: '20px' }}>
+				Loading data from the API. But it is unstable.
+			</p>
+		);
+	if (error)
+		return (
+			<p style={{ color: 'black' }}>
+				Endpoint is not accessible, please try it again later.
+			</p>
+		);
 
 	const top10Drivers = driverStandings.slice(0, 10);
 
@@ -56,7 +66,7 @@ const Results: React.FC = () => {
 										<img
 											src={
 												teamLogos[
-													driver.Constructors[0].name
+												driver.Constructors[0].name
 												] || ''
 											}
 											alt="team logo"
