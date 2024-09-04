@@ -26,7 +26,13 @@ const Results: React.FC = () => {
 		);
 	if (error)
 		return (
-			<p style={{ color: 'black' }}>
+			<p
+				style={{
+					color: 'black',
+					fontFamily: 'Lato',
+					fontSize: '20px',
+				}}
+			>
 				Endpoint is not accessible, please try it again later.
 			</p>
 		);
@@ -66,7 +72,7 @@ const Results: React.FC = () => {
 										<img
 											src={
 												teamLogos[
-												driver.Constructors[0].name
+													driver.Constructors[0].name
 												] || ''
 											}
 											alt="team logo"
